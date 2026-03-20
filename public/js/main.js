@@ -130,6 +130,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (res.ok) {
           btn.textContent = '¡Mensaje enviado!';
           form.reset();
+          let msg = form.querySelector('.form-success');
+          if (!msg) {
+            msg = document.createElement('p');
+            msg.className = 'form-success';
+            msg.style.cssText = 'color:#27ae60;text-align:center;margin-top:1rem;font-weight:600;';
+            form.appendChild(msg);
+          }
+          msg.textContent = 'Solicitud enviada con éxito, pronto nos comunicaremos con usted.';
         } else {
           const err = await res.json();
           btn.textContent = err.error || 'Error al enviar';

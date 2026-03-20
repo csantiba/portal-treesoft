@@ -111,31 +111,36 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== CONTACT FORM ==========
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const data = new FormData(form);
-      const values = Object.fromEntries(data.entries());
-
-      // Build mailto link as fallback
-      const subject = encodeURIComponent('Solicitud de información - TreeSoft');
-      const body = encodeURIComponent(
-        `Nombre: ${values.nombre}\n` +
-        `Email: ${values.email}\n` +
-        `Municipalidad: ${values.municipalidad || 'No especificada'}\n\n` +
-        `Mensaje:\n${values.mensaje || 'Solicito información sobre TreeSoft.'}`
-      );
-
-      window.location.href = `mailto:contacto@treesoft.cl?subject=${subject}&body=${body}`;
-
-      // Show confirmation
       const btn = form.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      btn.textContent = 'Abriendo correo...';
+      btn.textContent = 'Enviando...';
       btn.disabled = true;
+
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        if (res.ok) {
+          btn.textContent = '¡Mensaje enviado!';
+          form.reset();
+        } else {
+          const err = await res.json();
+          btn.textContent = err.error || 'Error al enviar';
+        }
+      } catch {
+        btn.textContent = 'Error de conexión';
+      }
+
       setTimeout(() => {
         btn.textContent = originalText;
         btn.disabled = false;
-        form.reset();
       }, 3000);
     });
   }

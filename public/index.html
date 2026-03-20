@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TreeSoft — Gestión Inteligente del Arbolado Urbano</title>
+  <meta name="description" content="TreeSoft es la plataforma SaaS que permite a las municipalidades gestionar su arbolado urbano de forma eficiente, transparente y basada en datos. Desarrollado en Chile.">
+  <meta name="keywords" content="arbolado urbano, gestión municipal, catastro árboles, órdenes de trabajo, SaaS, municipalidad, Chile, TreeSoft, OLISAN">
+  <meta property="og:title" content="TreeSoft — Gestión Inteligente del Arbolado Urbano">
+  <meta property="og:description" content="Plataforma SaaS para la gestión integral del arbolado urbano municipal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://treesoft.cl">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="images/tree-logo-hor.png" alt="TreeSoft" height="40">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#problema">El Desafío</a></li>
+        <li><a href="#solucion">Solución</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto" class="nav-cta">Contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-tag">Plataforma SaaS para Municipalidades</p>
+        <h1>Gestión inteligente del <span class="text-accent">arbolado urbano</span></h1>
+        <p class="hero-desc">TreeSoft permite a las municipalidades mantener un catastro dinámico y gestionar eficientemente el mantenimiento de su arbolado, con transparencia, trazabilidad y datos confiables.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Solicitar una demo</a>
+          <a href="#solucion" class="btn btn-outline">Conocer más</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">Desarrollado en Chile</span>
+          <span class="badge">Estándares ISA</span>
+          <span class="badge">En operación desde 2023</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="images/tree-logo-icon.png" alt="TreeSoft Icon" class="hero-icon">
+          <div class="hero-stats-grid">
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-target="50000">0</span>
+              <span class="hero-stat-label">Árboles gestionados</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-target="20000">0</span>
+              <span class="hero-stat-label">Órdenes procesadas</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-target="100">0</span>
+              <span class="hero-stat-label">% Disponibilidad</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-target="230">0</span>
+              <span class="hero-stat-label">Especies en base</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#problema" aria-label="Ir al contenido">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== QUOTE ========== -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="main-quote">
+        <p>&ldquo;Lo que no somos capaces de medir, no somos capaces de gestionar&rdquo;</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEMA ========== -->
+  <section class="section section-light" id="problema">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">El Desafío</span>
+        <h2>¿Por qué gestionar el arbolado urbano?</h2>
+        <p class="section-subtitle">El arbolado urbano es un activo estratégico de la comuna. Su gestión adecuada impacta directamente en la calidad de vida de los vecinos, la imagen urbana y la sostenibilidad ambiental.</p>
+      </div>
+      <div class="cards-grid cards-2x2">
+        <div class="card card-problem">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/><line x1="3" y1="3" x2="21" y2="21" stroke-width="2"/></svg>
+          </div>
+          <h3>Catastros Desactualizados</h3>
+          <p>La mayoría de las municipalidades no cuenta con un inventario preciso ni actualizado de su arbolado, lo que dificulta la planificación y la toma de decisiones informadas.</p>
+        </div>
+        <div class="card card-problem">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Procesos Manuales e Ineficientes</h3>
+          <p>La asignación y seguimiento de tareas de mantenimiento se realiza mediante procesos manuales, sin coordinación centralizada, generando retrasos y sobrecostos.</p>
+        </div>
+        <div class="card card-problem">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/><line x1="3" y1="3" x2="21" y2="21" stroke-width="2"/></svg>
+          </div>
+          <h3>Escasa Transparencia</h3>
+          <p>Es difícil verificar que el trabajo contratado fue efectivamente realizado y con la calidad esperada, impactando la rendición de cuentas y el control presupuestario.</p>
+        </div>
+        <div class="card card-problem">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h8m-8 5h16"/><circle cx="18" cy="12" r="3"/></svg>
+          </div>
+          <h3>Información Fragmentada</h3>
+          <p>Los datos del arbolado se encuentran dispersos en planillas, documentos y sistemas distintos, dificultando el acceso rápido y el análisis integral.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUCIÓN ========== -->
+  <section class="section section-white" id="solucion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">La Solución</span>
+        <h2>TreeSoft: gestión integral en una sola plataforma</h2>
+        <p class="section-subtitle">Plataforma SaaS basada en la nube, inspirada en las recomendaciones de la International Society of Arboriculture (ISA), que se sustenta en dos pilares fundamentales.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-header">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+            </div>
+            <h3>Catastro Dinámico</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Registro detallado de cada árbol con datos ISA</li>
+            <li>Ubicación georreferenciada en Google Maps</li>
+            <li>Base de datos con más de 230 especies con fotografías</li>
+            <li>Historial completo de intervenciones</li>
+            <li>Filtros avanzados y exportación a planilla</li>
+            <li>Visualización en mapa interactivo</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="pillar-header">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </div>
+            <h3>Órdenes de Trabajo</h3>
+          </div>
+          <ul class="pillar-list">
+            <li>Ciclo completo: emisión, ejecución y validación</li>
+            <li>Contratistas reportan con evidencia fotográfica</li>
+            <li>Validación por Inspector Técnico (ITS)</li>
+            <li>Facturación basada en trabajo validado</li>
+            <li>Control anti-duplicidad de cobros</li>
+            <li>Actualización automática del catastro</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFICIOS ========== -->
+  <section class="section section-green" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-light">Beneficios</span>
+        <h2>Lo que TreeSoft hace por su municipalidad</h2>
+      </div>
+      <div class="cards-grid cards-3col">
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Datos Confiables</h3>
+          <p>Mantenga un catastro preciso y al día que permite planificar con información real y tomar mejores decisiones.</p>
+        </div>
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Eficiencia Operacional</h3>
+          <p>Automatice la asignación, ejecución y seguimiento de trabajos, reduciendo tiempos, papeleo y costos operativos.</p>
+        </div>
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <h3>Transparencia y Control</h3>
+          <p>Verifique el trabajo de contratistas mediante evidencia fotográfica y validación del ITS. Cada acción queda registrada.</p>
+        </div>
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2v-1m0-3V6a2 2 0 012-2h8a2 2 0 012 2v3"/><path d="M3 8h2v4l4-4h4a2 2 0 002-2V4a2 2 0 00-2-2H5a2 2 0 00-2 2v4z"/></svg>
+          </div>
+          <h3>Comunicación Centralizada</h3>
+          <p>Una sola plataforma para coordinar equipos municipales y contratistas, eliminando llamadas y correos dispersos.</p>
+        </div>
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+          </div>
+          <h3>Facturación Sin Errores</h3>
+          <p>Facture solo por el trabajo realmente realizado y validado. Control automático que impide cobros duplicados.</p>
+        </div>
+        <div class="card card-benefit">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 004 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Estándares Internacionales</h3>
+          <p>Adopte las mejores prácticas de la ISA en la recopilación y gestión de datos de arbolado urbano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARA QUÉ ========== -->
+  <section class="section section-light" id="paraque">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Casos de Uso</span>
+        <h2>Para qué usar TreeSoft</h2>
+      </div>
+      <div class="use-cases">
+        <div class="use-case">
+          <div class="use-case-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3>Educar e informar a los vecinos</h3>
+          <p>Comparta con la comunidad información sobre las especies plantadas, su estado y los trabajos de mantenimiento realizados, a través del mapa público interactivo.</p>
+        </div>
+        <div class="use-case">
+          <div class="use-case-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3>Coordinar el trabajo de contratistas</h3>
+          <p>Ordene y supervise las tareas de mantenimiento con un flujo digital que incluye evidencia fotográfica y validación por el inspector técnico municipal.</p>
+        </div>
+        <div class="use-case">
+          <div class="use-case-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Controlar el avance de actividades</h3>
+          <p>Obtenga reportes actualizados del progreso de las intervenciones, permitiendo una gestión proactiva y la rendición de cuentas oportuna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECNOLOGÍA ========== -->
+  <section class="section section-white" id="tecnologia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Plataforma</span>
+        <h2>Tecnología y Seguridad</h2>
+        <p class="section-subtitle">Infraestructura robusta, accesible desde cualquier dispositivo y sin necesidad de instalación.</p>
+      </div>
+      <div class="cards-grid cards-3col">
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3>Cloud en Amazon WS</h3>
+          <p>Infraestructura robusta y escalable. Sin instalación de software. Acceso desde cualquier navegador web.</p>
+        </div>
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3>Seguridad</h3>
+          <p>Encriptación HTTPS en todo momento. Autenticación con usuario y contraseña. Backups automáticos diarios.</p>
+        </div>
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Multi-dispositivo</h3>
+          <p>Funciona en PC, notebook, tablet y celular. Probado en Android e iOS. Optimizado para tablets de 10 pulgadas.</p>
+        </div>
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+          </div>
+          <h3>Alta Disponibilidad</h3>
+          <p>99% de uptime garantizado. Servidores operando 24/7. 18 meses de operación sin interrupciones.</p>
+        </div>
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Geolocalización Precisa</h3>
+          <p>Google Maps integrado + GPS. Soporte para navegador GNSS vía Bluetooth. Coordenadas geográficas estándar.</p>
+        </div>
+        <div class="card card-tech">
+          <div class="card-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+          </div>
+          <h3>Completamente en Español</h3>
+          <p>Interfaz, menús, parámetros y datos base totalmente en castellano, con unidades de medida locales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCIA ========== -->
+  <section class="section section-dark" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-light">Respaldo</span>
+        <h2>Nuestra Experiencia</h2>
+        <p class="section-subtitle" style="color: var(--green-accent)">OLISAN SPA es una empresa chilena especializada en soluciones tecnológicas en la nube. TreeSoft fue desarrollado por ingenieros chilenos y se encuentra en operación continua desde diciembre de 2023.</p>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number" data-target="50000">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Árboles gestionados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="20000">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Órdenes de trabajo procesadas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-plus">%</span>
+          <span class="stat-label">Disponibilidad a la fecha</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="230">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Especies en base de datos</span>
+        </div>
+      </div>
+      <div class="experience-badges">
+        <img src="images/sello-100-soluciones.jpg" alt="Sello Catálogo 100 Soluciones 2024" class="badge-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POR QUÉ TREESOFT ========== -->
+  <section class="section section-white" id="porque">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Diferenciadores</span>
+        <h2>¿Por qué elegir TreeSoft?</h2>
+      </div>
+      <div class="reasons-list">
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Desarrollado en Chile, pensado para la realidad municipal chilena</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>En operación continua desde 2023 con resultados comprobados</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Inspirado en estándares internacionales de la ISA</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Sin inversión inicial — modelo SaaS con tarifa mensual predecible</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Somos los desarrolladores: soporte directo, sin intermediarios</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Nuevas funcionalidades disponibles para todos los clientes</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Catastro dinámico que se actualiza con cada orden de trabajo</span>
+        </div>
+        <div class="reason">
+          <div class="reason-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span>Interfaz intuitiva diseñada para el trabajo en terreno</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <img src="images/tree-logo-hor.png" alt="TreeSoft" class="contact-logo">
+          <h2>Conversemos sobre cómo TreeSoft puede ayudar a su municipalidad</h2>
+          <p>Solicite una demostración personalizada y descubra cómo optimizar la gestión de su arbolado urbano.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:contacto@treesoft.cl">contacto@treesoft.cl</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 004 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <a href="https://treesoft.cl">www.treesoft.cl</a>
+            </div>
+          </div>
+          <div class="contact-company">
+            <img src="images/olisan-logo.png" alt="OLISAN SpA" class="olisan-logo">
+            <span>Un servicio de OLISAN SPA</span>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <h3>Solicitar información</h3>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="municipalidad">Municipalidad</label>
+              <input type="text" id="municipalidad" name="municipalidad">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntenos sobre sus necesidades..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="images/tree-logo-hor.png" alt="TreeSoft" height="32">
+        <p>Gestión inteligente del arbolado urbano</p>
+      </div>
+      <div class="footer-links">
+        <a href="#solucion">Solución</a>
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 OLISAN SPA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

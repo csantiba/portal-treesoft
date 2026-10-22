@@ -1,3 +1,11 @@
+// ========== ALTCHA ==========
+// El build "external" no incluye workers: se registran desde /vendor (CSP sin blob:)
+if (window.$altcha) {
+  ['PBKDF2/SHA-256', 'PBKDF2/SHA-384', 'PBKDF2/SHA-512'].forEach(alg => {
+    $altcha.algorithms.set(alg, () => new Worker('/vendor/altcha/workers/pbkdf2.js'));
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ========== NAVBAR SCROLL ==========
@@ -145,6 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch {
         btn.textContent = 'Error de conexión';
       }
+
+      // Cada verificación ALTCHA es de un solo uso
+      form.querySelector('altcha-widget')?.reset();
 
       setTimeout(() => {
         btn.textContent = originalText;

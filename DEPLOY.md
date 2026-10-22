@@ -32,9 +32,14 @@ npm install --production
 
 ## 3. Configurar PM2
 
+El formulario de contacto usa [ALTCHA](https://altcha.org) como anti-spam. Los desafíos se firman
+con `ALTCHA_HMAC_SECRET`; si no se define, se genera una clave aleatoria en cada arranque
+(funciona, pero un formulario abierto durante un reinicio fallará la verificación y deberá reintentarse).
+
 ```bash
 cd /var/www/treesoft
-pm2 start ecosystem.config.js
+export ALTCHA_HMAC_SECRET="$(openssl rand -hex 32)"
+pm2 start ecosystem.config.js --update-env
 pm2 save
 pm2 startup  # seguir las instrucciones que muestre
 ```

@@ -3,7 +3,7 @@
 Producción (treesoft.cl) corre en `/var/www/treesoft` como servicio systemd `treesoft-web`,
 escuchando en el puerto **3001**. Apache termina SSL y hace proxy a `127.0.0.1:3001`.
 
-> El servicio se migró desde PM2 el 2026-08-21. `ecosystem.config.js` ya no se usa en producción.
+> El servicio se migró desde PM2 el 2026-08-21.
 
 ## Actualizar el sitio
 
@@ -17,7 +17,7 @@ cp -a /var/www/treesoft /var/www/treesoft.bak-$(date +%Y%m%d-%H%M%S)
 
 # Copiar código (sin tocar node_modules ni archivos propios de producción)
 rsync -a --exclude=.git --exclude=node_modules --exclude=package-lock.json \
-  --exclude=ecosystem.config.js --exclude=.gitignore \
+  --exclude=.gitignore \
   /root/proyectos/sitio-treesoft/ /var/www/treesoft/
 
 # Dependencias y reinicio

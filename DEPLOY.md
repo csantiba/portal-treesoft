@@ -27,8 +27,11 @@ scp -r web/* usuario@servidor:/var/www/treesoft/
 
 # Instalar dependencias en el servidor
 cd /var/www/treesoft
-npm install --production
+npm install --production --legacy-peer-deps
 ```
+
+> `--legacy-peer-deps` evita un error de npm 10.x (`Cannot read properties of null (reading 'edgesOut')`)
+> al resolver las peer dependencies opcionales de `altcha`.
 
 ## 3. Configurar PM2
 
@@ -95,5 +98,5 @@ sudo tail -f /var/log/apache2/treesoft-error.log
 sudo tail -f /var/log/apache2/treesoft-access.log
 
 # Actualizar el sitio (después de subir nuevos archivos)
-cd /var/www/treesoft && npm install --production && pm2 restart treesoft-web
+cd /var/www/treesoft && npm install --production --legacy-peer-deps && pm2 restart treesoft-web
 ```
